@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Future Navigator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0fdf4;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+        .login-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            position: relative;
+        }
+        h2 {
+            color: #2e7d32;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-button, .google-button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .login-button {
+            background-color: #2e7d32;
+            color: white;
+        }
+        .login-button:hover {
+            background-color: #1b5e20;
+        }
+        .google-button {
+            background-color: #2e7d32;
+            color: white;
+        }
+        .google-button:hover {
+            background-color: #1b5e20;
+        }
+        .signup-link {
+            display: block;
+            margin-top: 10px;
+            color: #1565c0;
+            text-decoration: none;
+        }
+        .signup-link:hover {
+            text-decoration: underline;
+        }
+        .login-icon {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        .close-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            color: black;
+            cursor: pointer;
+            text-decoration: none;
+            padding: 5px;
+            border-radius: 50%;
+        }
+        .close-icon:hover {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <a href="dti.html" class="close-icon">&times;</a>
+        <img src="D:\DTI\image\login.png" alt="Login Icon" class="login-icon">
+        <h2>Login</h2>
+        <form action="/register" method="post">
+            <input type="email" class="input-field" placeholder="Email"  name="email" required>
+            <input type="password" class="input-field" placeholder="Password" name="password" required>
+            <button type="submit" class="login-button">Login</button>
+        </form>
+        <button class="google-button">Continue with Google</button>
+        <a href="sin.html" class="signup-link">Don't have an account? Sign up</a>
+    </div>
+</body>
+</html>
