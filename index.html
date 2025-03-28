@@ -224,6 +224,15 @@
         function hidePopup() {
             document.getElementById("popup").style.display = "none";
         }
+         document.addEventListener("DOMContentLoaded", function () {
+        let sidebar = document.querySelector(".sidebar");
+        let startPosition = sidebar.offsetTop;
+
+        window.addEventListener("scroll", function () {
+            let scrollPosition = window.scrollY;
+            sidebar.style.top = Math.max(60, scrollPosition) + "px"; // Adjust for smooth movement
+        });
+    });
     </script>
 </body>
 </html>
