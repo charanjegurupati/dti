@@ -99,7 +99,11 @@
             text-align: center;
             border-radius: 10px;
             animation: blink 1s infinite alternate;
+            height: 150px; /* Set a fixed height */
+            overflow-y: auto; /* Enable vertical scrolling */
+            border: 2px solid #2e7d32; /* Optional border for better visibility */
         }
+
         @keyframes blink {
             0% { color: red; }
             100% { color: black; }
