@@ -375,7 +375,7 @@
             }
         }
 
-        .govt-exam-container {
+/*         .govt-exam-container {
             width: 100%;
             margin: 20px auto;
             padding: 15px;
@@ -397,7 +397,33 @@
         @keyframes scrollText {
             0% { transform: translateY(100%); }
             100% { transform: translateY(-100%); }
-        }
+        } */
+
+        .govt-exam-container {
+    width: 100%;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #e8f5e9;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #2e7d32;
+    overflow: hidden; /* Prevent overflow */
+    height: 100px; /* Set a fixed height */
+}
+
+.govt-exam-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollText 10s linear infinite;
+}
+
+@keyframes scrollText {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(-100%); }
+}
 
         .chatbot-container {
             position: fixed;
@@ -488,6 +514,7 @@
                 <p><a href="https://ctet.nic.in/">CTET - 10th September</a> | <a href="https://www.jeemain.nta.nic.in/">JEE Mains - 5th October</a></p>
             </div>
         </div>
+
 
         <div class="content-section">
             <img src="dashboard.png" alt="Family Business Growth">
