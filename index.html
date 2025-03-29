@@ -23,6 +23,32 @@
             align-items: center;
             position: relative;
         }
+        .container {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+               width: 80%;
+               max-width: 1200px;
+               margin: auto;
+        }
+         @media screen and (max-width: 768px) {
+           .container {
+                flex-direction: column;
+          }
+        }
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">Content</div>
+            <div class="col-md-6">Content</div>
+          </div>
+        </div>
+
+
+        img {
+              max-width: 100%;
+              height: auto;
+            }
+
         .nav-links {
             position: absolute;
             right: 20px;
